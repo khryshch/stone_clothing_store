@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин одягу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин одягу</h1>
+    </header>
+    
+    <div class="product-container">
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Продукт 1">
+            <h2>Футболка</h2>
+            <p>Ціна: 500 грн</p>
+            <button class="buy-btn" onclick="openForm()">Купити</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Продукт 2">
+            <h2>Джинси</h2>
+            <p>Ціна: 1000 грн</p>
+            <button class="buy-btn" onclick="openForm()">Купити</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Продукт 3">
+            <h2>Куртка</h2>
+            <p>Ціна: 1500 грн</p>
+            <button class="buy-btn" onclick="openForm()">Купити</button>
+        </div>
+    </div>
+
+    <div class="form-popup" id="orderForm">
+        <form action="" class="form-container">
+            <h2>Заповніть форму для покупки</h2>
+            <label for="name"><b>Прізвище, ім'я</b></label>
+            <input type="text" id="name" placeholder="Ваше ім'я" name="name" required>
+            
+            <label for="phone"><b>Номер телефону</b></label>
+            <input type="text" id="phone" placeholder="Ваш номер телефону" name="phone" required>
+            
+            <label for="city"><b>Область/місто</b></label>
+            <input type="text" id="city" placeholder="Ваша область чи місто" name="city" required>
+            
+            <label for="novaposhta"><b>Відділення Нової Пошти</b></label>
+            <input type="text" id="novaposhta" placeholder="Номер відділення" name="novaposhta" required>
+            
+            <button type="submit" class="btn">Відправити</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Закрити</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
